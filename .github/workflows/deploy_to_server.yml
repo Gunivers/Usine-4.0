@@ -30,5 +30,6 @@ jobs:
         with:
           host: ${{ secrets.USINE4_SERVER_IP }}
           user: ${{ secrets.USINE4_USER_ID }}
+          remotePath: /world/datapacks/
           password: ${{ secrets.USINE4_USER_PASSWORD }}
           ignore: .github/**,.gitignore,**/.gitignore,**/.git/**
