@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Lieu visité: Salle de contrôle",
+            "color":"green"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:observer"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "mechanism:root"
+}
