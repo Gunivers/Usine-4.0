@@ -43,7 +43,7 @@ execute if entity @s[tag=NoGravity] run scoreboard players set @s GravityIncreme
 
 
 # Calcul vectors
-function gunivers-lib:entity/vector/get_by_actual_orientation
+function glib:entity/vector/get_by_actual_orientation
 scoreboard players operation @s VectorX /= 10 Constant
 scoreboard players operation @s VectorY /= 10 Constant
 scoreboard players operation @s VectorZ /= 10 Constant
@@ -57,7 +57,7 @@ scoreboard players operation @s VectorY += @s Var5
 scoreboard players operation @s Var4 = @s VectorX
 scoreboard players operation @s Var5 = @s VectorY
 scoreboard players operation @s Var6 = @s VectorZ
-execute if block ~ ~-0.2 ~ redstone_block align xyz positioned ~0.5 ~ ~0.5 run function gunivers-lib:entity/vector/get_as_to_at
+execute if block ~ ~-0.2 ~ redstone_block align xyz positioned ~0.5 ~ ~0.5 run function glib:entity/vector/get_ata
 scoreboard players operation @s VectorX /= 8 Constant
 scoreboard players operation @s VectorY /= 8 Constant
 scoreboard players operation @s VectorZ /= 8 Constant
@@ -67,4 +67,4 @@ scoreboard players operation @s VectorZ += @s Var6
 
 
 # Move
-execute if entity @s[tag=Move] run function gunivers-lib:entity/move/vector_to_motion
+execute if entity @s[tag=Move] run function glib:entity/move/vector_to_motion

@@ -17,7 +17,7 @@
 #____________________________________________________________________________________________________
 
 # Tirage du nombre aléatoire que l'on borne à un nombre entre 0 et 2
-execute as @e[tag=FactorySummoner] run function gunivers-lib:math/random
+execute as @e[tag=FactorySummoner] run function glib:math/random
 execute as @e[tag=FactorySummoner] run scoreboard players operation @s Res %= 3 Constant
 # Création de l'item
 execute as @e[tag=FactorySummoner] run scoreboard players operation @s Var1 = @s Res

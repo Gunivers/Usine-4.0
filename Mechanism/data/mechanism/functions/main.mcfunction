@@ -53,6 +53,6 @@ function mechanism:torch/main
 # SECURITY
 
 # Temps de vie des entités
-execute as @e[type=armor_stand,tag=ItemFactory] run function gunivers-lib:entity/health/time_to_live
+execute as @e[type=armor_stand,tag=ItemFactory] run function glib:entity/health/time_to_live
 scoreboard players set @e[tag=ItemFactory,scores={TTL=..0}] TTL 1200
 

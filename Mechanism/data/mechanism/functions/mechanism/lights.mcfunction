@@ -31,7 +31,7 @@ scoreboard players remove @a LocZ 199
 
 execute if entity @a[tag=Night] run summon area_effect_cloud ~ 1 ~ {Tags:["Light"],Small:1,Invisible:1}
 
-execute as @e[type=area_effect_cloud,tag=Light] run function gunivers-lib:entity/location/get
+execute as @e[type=area_effect_cloud,tag=Light] run function glib:entity/location/get
 
 scoreboard players remove @e[type=area_effect_cloud,tag=Light] LocX 315
 scoreboard players add @e[type=area_effect_cloud,tag=Light] LocZ 199
@@ -48,7 +48,7 @@ execute as @e[type=area_effect_cloud,tag=Light] run scoreboard players operation
 scoreboard players add @e[type=area_effect_cloud,tag=Light] Var1 315
 scoreboard players remove @e[type=area_effect_cloud,tag=Light] Var3 199
 
-execute as @e[type=area_effect_cloud,tag=Light] run function gunivers-lib:entity/location/set
+execute as @e[type=area_effect_cloud,tag=Light] run function glib:entity/location/set
 
 execute as @e[type=area_effect_cloud,tag=Light] at @s run fill ~-20 16 ~-16 ~40 16 ~32 sea_lantern replace redstone_lamp
 execute as @e[type=area_effect_cloud,tag=Light] at @s run fill ~-20 9 ~-16 ~40 9 ~32 sea_lantern replace redstone_lamp
